@@ -1,0 +1,10 @@
+import pandas as pd
+temp_max = pd.Series([28,32,45,43,16,12,30])
+temp_min = pd.Series([16,20,13,25,18,10,8])
+media_max = temp_max.mean()
+media_min = temp_min.mean()
+print("A amplitude Termica em Grau ºC")
+print(temp_max - temp_min)
+print("--------------------------------------------")
+print(f"A média da temperatura máxima foi: {media_max:.1f} ºC")
+print(f"Amédia da teperatura mínima foi: {media_min:.1f} ºC")
